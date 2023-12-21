@@ -1,0 +1,69 @@
+<!-- task 1 -->
+<p id="one">Hello</p>
+<h1 id="title">Hello world</h1>
+
+<!-- task 2 -->
+<h1 id="two">Hello World!!!</h1>
+<button onclick="change()">Change</button>
+
+<!-- task 3   -->
+<!-- result id is given not coming in browser -->
+<input id="num1">
+<input  id="num2">
+<button onclick="resultfunction()">Add</button>
+<p id="result">Result</p>
+
+
+<script>
+   // task 1
+   var para= document.getElementById("one")
+   console.log(para.textContent)
+   para.textContent="Bye"
+
+   // task2
+   var heading=document.getElementById("title")
+   console.log(heading.textContent)
+   heading.textContent="Bye Hello"
+
+      function change(){    
+      var head=document.getElementById("two")
+   console.log(head.textContent)
+   
+   head.textContent="Bye World!!!"
+   }
+
+   // task3
+   var box1 =document.getElementById("num1")
+   var box2 =document.getElementById("num2")
+   var result=document.getElementById("result")
+     
+        
+         function resultfunction(){
+        var box1value= Number(box1.value)
+        var box2value= Number(box2.value)
+        var total=box1.value+box2.value
+            console.log(total)
+         result.textContent=total                                    
+      
+         } 
+   // table function
+   function table(n){
+   for(let i=1;i<=10;i++){
+    console.log(n+"x"+" "+i+" "+"="+" "+n*i)
+    } 
+   }
+table(n)    
+// can put any number instead of n
+
+         // Math.random- prints random number between 0.0 to 0.9
+         // Math.floor- prints number by eliminating decimal such as 7.9 to 7.
+         var a =Math.random()
+           console.log(Math.floor(a*10)+1)
+         // a*10 is to convert random number into whole number
+         // a*10 +1 is convert number upto to 1-10.
+
+
+
+
+</script>
+

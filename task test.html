@@ -1,0 +1,77 @@
+<!-- tASK 1 -->
+<input id="inputbox" onkeyup="update()">
+<h1 id="result"></h1>
+
+<!-- script -->
+<script>
+// select input tag
+// select h1 tag
+     var inputbox=document.getElementById("inputbox")
+     var result=document.getElementById("result")
+
+function update(){
+            result.textContent=inputbox.value
+}
+
+</script>
+
+<!-- task 2 -->
+
+<button onclick="update()">Add</button>
+<div id="result">
+
+</div>
+
+<script>
+    var div=document.getElementById("result")
+    function update(){
+    // create h1 tag
+    var listitem=document.createElement("h1")
+    listitem.textContent="Hello"
+    div.append(listitem)
+    }
+</script>
+
+
+<!-- task 3 -->
+<button id="btn" onclick="change()">Change color</button>
+
+  <script>
+    var btn=document.getElementById("btn")
+        function change()
+           {
+                btn.style.backgroundColor="red"
+               }
+ </script>
+
+<!-- task 4 -->
+<h1 id="result">Name</h1>
+<button onclick="update (event)">Tanu</button>
+<button  onclick="update (event)">Saravanan</button>
+<button  onclick="update (event)">Priya</button>
+
+<!-- script -->
+<script>
+       var h1=document.getElementById("result")
+
+    function update (event)
+    {
+        h1.textContent=event.target.textContent
+    }
+
+</script><!-- task 4 -->
+<h1 id="result">Name</h1>
+<button onclick="update (event)">Lusu Tanu</button>
+<button  onclick="update (event)">Sengal psycho Saravanan</button>
+<button  onclick="update (event)">Paithiyam Priya</button>
+
+<!-- script -->
+<script>
+       var h1=document.getElementById("result")
+
+    function update (event)
+    {
+        h1.textContent=event.target.textContent
+    }
+
+</script>
